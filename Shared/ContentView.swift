@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Omikuzi__Library
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text(おみくじ.引く().description)
             .padding()
     }
 }

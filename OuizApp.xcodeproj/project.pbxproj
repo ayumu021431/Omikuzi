@@ -17,6 +17,8 @@
 		F2B5CDF527E5C907004B09E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5CDCB27E5C903004B09E8 /* ContentView.swift */; };
 		F2B5CDF627E5C907004B09E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5CDCC27E5C906004B09E8 /* Assets.xcassets */; };
 		F2B5CDF727E5C907004B09E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5CDCC27E5C906004B09E8 /* Assets.xcassets */; };
+		F2B5CE0A27E5C980004B09E8 /* Omikuzi_ Library in Frameworks */ = {isa = PBXBuildFile; productRef = F2B5CE0927E5C980004B09E8 /* Omikuzi_ Library */; };
+		F2B5CE0C27E5C98D004B09E8 /* Omikuzi_ Library in Frameworks */ = {isa = PBXBuildFile; productRef = F2B5CE0B27E5C98D004B09E8 /* Omikuzi_ Library */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		F2B5CDEA27E5C907004B09E8 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B5CDEE27E5C907004B09E8 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		F2B5CDF027E5C907004B09E8 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		F2B5CE0727E5C952004B09E8 /* Omikuzi_ Library */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Omikuzi_ Library"; path = "../Omikuzi_ Library"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B5CE0C27E5C98D004B09E8 /* Omikuzi_ Library in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B5CE0A27E5C980004B09E8 /* Omikuzi_ Library in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,11 +91,13 @@
 		F2B5CDC427E5C903004B09E8 = {
 			isa = PBXGroup;
 			children = (
+				F2B5CE0627E5C952004B09E8 /* Packages */,
 				F2B5CDC927E5C903004B09E8 /* Shared */,
 				F2B5CDD827E5C907004B09E8 /* macOS */,
 				F2B5CDE127E5C907004B09E8 /* Tests iOS */,
 				F2B5CDED27E5C907004B09E8 /* Tests macOS */,
 				F2B5CDD227E5C906004B09E8 /* Products */,
+				F2B5CE0827E5C980004B09E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +148,21 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		F2B5CE0627E5C952004B09E8 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F2B5CE0727E5C952004B09E8 /* Omikuzi_ Library */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		F2B5CE0827E5C980004B09E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +179,9 @@
 			dependencies = (
 			);
 			name = "OuizApp (iOS)";
+			packageProductDependencies = (
+				F2B5CE0B27E5C98D004B09E8 /* Omikuzi_ Library */,
+			);
 			productName = "OuizApp (iOS)";
 			productReference = F2B5CDD127E5C906004B09E8 /* OuizApp.app */;
 			productType = "com.apple.product-type.application";
@@ -174,6 +199,9 @@
 			dependencies = (
 			);
 			name = "OuizApp (macOS)";
+			packageProductDependencies = (
+				F2B5CE0927E5C980004B09E8 /* Omikuzi_ Library */,
+			);
 			productName = "OuizApp (macOS)";
 			productReference = F2B5CDD727E5C907004B09E8 /* OuizApp.app */;
 			productType = "com.apple.product-type.application";
@@ -703,6 +731,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F2B5CE0927E5C980004B09E8 /* Omikuzi_ Library */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Omikuzi_ Library";
+		};
+		F2B5CE0B27E5C98D004B09E8 /* Omikuzi_ Library */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Omikuzi_ Library";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F2B5CDC527E5C903004B09E8 /* Project object */;
 }
